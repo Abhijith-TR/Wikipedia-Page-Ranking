@@ -1,10 +1,8 @@
-Done by - Abhijith T R
-Entry No - 2020CSB1062
-
-How to run the program
+### **How to run the program**
 You can run the program using python3 2020csb1062.py. You will be prompted for further options.
 
-Functions Created - Line by line explanation of the code in the python file
+### **Functions Created**
+- Line by line explanation of the code is in the python file
 
 1. findLinksBinary(title, textContent) - Takes the title and content of that particular title as argument. Returns nothing.
 Extracts content from <title>content</title> and extracts all the links from the file and inserts it as a list into the file
@@ -24,7 +22,7 @@ that have less than 5 links. Returns nothing
 
 6. plotFrequencies() - Plots the frequency vs number of pages graph.
 
-What I did
+### **What I did**
 
 I created an adjacency list using the wikidump file. To account for the huge size of the bz2 file I worked with the file itself.
 To make the write operation faster, I used pickle and dumped everything into a .pkl file. Then I read the adjacency list from
@@ -34,7 +32,7 @@ list corresponding to each page in main memory. Once this is done, we collect al
 pick a starting node. Once this is done, we can start the random walk and fetch the corresponding list of links from the actual
 file using the cursor file every single time to perform the random walk. 
 
-Observations
+### **Observations**
 
 1. The random walked graph observed exhibits the power law i.e., there exist a large number of nodes which are visited very few
 times, however there is not an exponential drop. There still exist a good number of nodes that are visited a large number of 
